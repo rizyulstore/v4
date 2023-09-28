@@ -125,9 +125,9 @@ clear && clear && clear
 clear;clear;clear
 
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "              ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
-echo -e "                CREATOR : ${GREEN} RIZYUL ${NC}${YELLOW}${NC} ${GREEN}VPN ${NC}${YELLOW}${NC}"
-echo -e "            © Copyright By RIZYULSTORE ${YELLOW}(${NC} TUNEL ${YELLOW})${NC}"
+echo -e "             ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
+echo -e "               CREATOR : ${GREEN} RIZYUL ${NC}${YELLOW}${NC} ${GREEN}VPN ${NC}${YELLOW}${NC}"
+echo -e "          © Copyright By RIZYULSTORE ${YELLOW}(${NC} TUNEL ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 echo -e "${RED_BG}                     Sytem Information                    ${NC}"
