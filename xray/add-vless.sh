@@ -57,7 +57,7 @@ vless3="$(echo $vlesslink3 | base64 -w 0)"
 
 TEXT="
 <code>◇═══════════════════◇</code>
-<code> 🔱 Premium Vless Account 🔱</code>
+<code> Premium Vless Account </code>
 <code>◇═══════════════════◇</code>
 <code>Remarks      : </code> <code>${user}</code>
 <code>Domain       : </code> <code>${domain}</code>
@@ -81,7 +81,6 @@ TEXT="
 <code>${vless3}</code>
 <code>◇═══════════════════◇</code>
 <code>Expired On : </code> <code>$exp</code>
-📡@TazVPN
 "
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
