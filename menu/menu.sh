@@ -205,6 +205,9 @@ menu
 export sem=$( curl -s https://raw.githubusercontent.com/artanodrop/permission/main/versions)
 #export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
+ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
+WKT=$(curl -s ipinfo.io/timezone?token=ce3da57536810d )
 clear
 echo -e ""
 echo -e ""
@@ -217,7 +220,9 @@ echo -e "${BICyan} │====================================================="
 echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
 echo -e " ${BICyan}│  ${BICyan}Current Domain  :  ${BIPurple}$(cat /etc/xray/domain)${NC}"
 echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
+echo -e " ${BICyan}│  ${BICyan}CITY            :  ${BIYellow}$CITY${NC}"
 echo -e " ${BICyan}│  ${BICyan}ISP             :  ${BIYellow}$ISP${NC}"
+echo -e " ${BICyan}│  ${BICyan}WKT             :  ${BIYellow}$WKT${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
