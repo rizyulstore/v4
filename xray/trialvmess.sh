@@ -108,7 +108,7 @@ TEXT="
 <code>${vmesslink3}</code>
 <code>◇═══════════════════◇</code>
 <code>Expired On   : $exp</code>
-📡@TazVPN
+📡@Rizyul04
 "
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
