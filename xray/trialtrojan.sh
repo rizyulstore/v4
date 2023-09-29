@@ -15,8 +15,8 @@ sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 
 systemctl restart xray
-trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
-trojanlink="trojan://${uuid}@isi_bug_disini:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
+trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
+trojanlink="trojan://${uuid}@isi_bug_disini:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
 trojan1="$(echo $trojanlink1 | base64 -w 0)"
 trojan2="$(echo $trojanlink | base64 -w 0)"
@@ -52,8 +52,7 @@ echo -e "\E[0;41;36m           TRIAL TROJAN           \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Host/IP        : ${domain}"
-echo -e "Wildcard       : (bug.com).${domain}"
-echo -e "Port TLS       : ${tr}"
+echo -e "Port TLS       : 443"
 echo -e "Key            : ${uuid}"
 echo -e "Path           : /trojan-ws"
 echo -e "ServiceName    : trojan-grpc"
