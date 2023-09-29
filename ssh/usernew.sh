@@ -139,45 +139,5 @@ $domen[crlf]Upgrade: ws[crlf][crlf]
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "                  ${cyan}BRINGAS-FAMILY${NC}"
 echo -e "enter back to menu  "
-else 
 
-echo -e "${cyan}___________________________________${NC}"
-echo -e "           ${red_background}ACCOUNT${NC}" | tee -a /etc/log-create-user.log
-echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "Username   : $Login" | tee -a /etc/log-create-user.log
-echo -e "Password   : $Pass" | tee -a /etc/log-create-user.log
-echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
-echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "           ${red_background}DETAIL${NC}" | tee -a /etc/log-create-user.log
-echo -e "${cyan}___________________________________${NC}" | tee -a /etc/log-create-user.log
-echo -e "Host     : $domen" | tee -a /etc/log-create-user.log
-echo -e "NS       : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "PubKey   : $slkey" | tee -a /etc/log-create-user.log
-echo -e "Port ws  : 80" | tee -a /etc/log-create-user.log
-echo -e "ws ssl   : 443" | tee -a /etc/log-create-user.log
-echo -e "SSL only : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "SlowDNS  : 53,5300,443" 
-echo -e "UDPGW    : 7200 = suport vc" | tee -a /etc/log-create-user.log
-#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
-echo -e "Payload Websocket ( port 80 )" | tee -a /etc/log-create-user.log
-echo -e "
-GET / HTTP/1.1[crlf]Host:
-$domen[crlf]Upgrade: ws[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
-echo -e "payload ws ssl ( port 443 )"
-echo -e "
-GET-CFRAY wss://[host] HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: ws[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
-echo -e "payload opok Telkomsel"
-echo -e "
-GET http://tsel.me/worryfree/ HTTP/1.1[crlf]Host: 
-$domen[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
-fi
-echo "" | tee -a /etc/log-create-user.log
-read -n 1 -s -r -p "Script By Setan-VPN"
 menu
