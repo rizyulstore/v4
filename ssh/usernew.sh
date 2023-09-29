@@ -91,8 +91,7 @@ TEXT="
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
-echo "### $Login" >> /etc/xray/ssh
-if [[ ! -z "${PID}" ]]; then
+
 echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
