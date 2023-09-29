@@ -104,9 +104,9 @@ echo -e "\e[1;36m__________________________________________033[0m" | tee -a /etc
 echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
 echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "SSHWS       : $portsshws" | tee -a /etc/log-create-user.log
-echo -e "WS+SSL      : $wsssl" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "SSHWS       : 80, 8080" | tee -a /etc/log-create-user.log
+echo -e "WS+SSL      : 443" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : 8443,8880" | tee -a /etc/log-create-user.log
 echo -e "UDPGW       : 7200 - support VC" | tee -a /etc/log-create-user.log
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "_________________________________________________" | tee -a /etc/log-create-user.log
@@ -136,7 +136,7 @@ GET / HTTP/1.1[crlf]Host:
 $domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "                  ${cyan}BRINGAS-FAMILY${NC}"
+echo -e "            ${cyan}RIZYUL TUNNEL${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 
 menu
