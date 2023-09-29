@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
+rm -rf trialtrojan
 rm -rf menu
 rm -rf menu-trial
 rm -rf menu-vmess
@@ -76,6 +77,7 @@ wget -O delete "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/delete
 wget -O autokilll "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/autokilll.sh"
 wget -O ceklim "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/tendang.sh"
+wget -O trialtrojan "https://raw.githubusercontent.com/rizyulstore/v4/main/xray/trialtrojan.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/rizyulstore/v4/main/menu/menu-set.sh"
