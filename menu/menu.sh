@@ -104,6 +104,7 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
+export RED_BG='\e[41m'
 
 # // Clear
 clear
@@ -212,7 +213,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
-echo -e "                            ${red_background}${BIWhite}✙ RIZYULTUNNEL ✙ ${NC}"
+echo -e "${RED_BG}                       ✙ RIZYULTUNNEL ✙ ${NC}"
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
 echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIWhite} │                    ${BIWhite}${UWhite}INFORMATIONS${NC}"
