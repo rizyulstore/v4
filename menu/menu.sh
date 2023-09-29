@@ -213,7 +213,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
-echo -e "${RED_BG}                       ${BIWhite}✙ RIZYULTUNNEL ✙ ${NC}"
+echo -e    "${RED_BG}                       ${BIWhite}✙ RIZYULTUNNEL ✙ ${NC}"
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
 echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIWhite} │                    ${BIWhite}${UWhite}INFORMATIONS${NC}"
