@@ -104,7 +104,7 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
-export RED_BG="\e[41m"
+export RED_BG="\e[45m"
 
 # // Clear
 clear
