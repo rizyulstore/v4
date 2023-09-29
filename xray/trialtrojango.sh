@@ -14,8 +14,8 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan-go/akun.conf
 systemctl restart trojan-go.service
-link="trojan-go://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
-link1="trojan://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
+link="trojan-go://${uuid}@isi_bug_disini:443/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
+link1="trojan://${uuid}@isi_bug_disini:443/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
 clear
 trojan1="$(echo $link1 | base64 -w 0)"
 trojan2="$(echo $link | base64 -w 0)"
@@ -51,7 +51,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks    : ${user}"
 echo -e "IP/Host    : ${MYIP}"
 echo -e "Address    : ${domain}"
-echo -e "Port       : ${trgo}"
+echo -e "Port       : 443"
 echo -e "Key        : ${uuid}"
 echo -e "Encryption : none"
 echo -e "Path       : /trojango"
