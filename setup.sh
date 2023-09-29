@@ -139,7 +139,7 @@ yellow "Add Domain for vmess/vless/trojan dll"
   #  fi
     
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
-echo -e "                          ⇱ INSTALL DOMAIN ⇲            "
+echo -e "                   ⇱ INSTALL DOMAIN ⇲            "
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 echo "1. Use Domain Script "
 echo "3. Use Private Domain "
