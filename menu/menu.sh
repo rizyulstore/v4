@@ -244,7 +244,7 @@ echo -e "${BIWhite} │$NC ${BIWhite}HARI ini${NC}: ${red}$ttoday$NC ${BIWhite}K
 echo -e "${BIWhite} └─────────────────────────────────────────────────────┘${NC}"
 echo -e " ${BIWhite}┌─────────────────────────────────────────────────────┐${NC}"
 echo -e " ${BIWhite}│  Version      ${NC} : 3.1 Last Update"
-echo -e " ${BIWhite}│  User       ${NC}   :\033[1;97m $Name \e[0m"
+echo -e " ${BIWhite}│  User       ${NC}   : $Name \e[0m"
 echo -e " ${BIWhite}│  Expiry script${NC} : ${BIYellow}$useexp${NC} Days"
 echo -e " ${BIWhite}└─────────────────────────────────────────────────────┘${NC}"
 echo
