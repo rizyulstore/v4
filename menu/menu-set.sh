@@ -39,5 +39,5 @@ case $opt in
 9) clear ; about ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "" ; echo "salah pencet taiii" ; sleep 1 ; menu-set ;;
+*) echo -e "" ; echo "salah pencet abang" ; sleep 1 ; menu-set ;;
 esac
