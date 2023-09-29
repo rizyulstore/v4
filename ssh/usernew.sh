@@ -138,6 +138,6 @@ $domen[crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "                  ${cyan}BRINGAS-FAMILY${NC}"
-echo -e "enter back to menu  "
+read -n 1 -s -r -p "Press any key to back on menu"
 
 menu
