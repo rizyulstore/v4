@@ -105,6 +105,8 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 export RED_BG="\e[45m"
+export COLOR1="$(cat /etc/yaddykakkoii/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+export COLBG1="$(cat /etc/yaddykakkoii/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 
 # // Clear
 clear
@@ -213,7 +215,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
-echo -e "${NC} ${RED_BG}                ${BIWhite}✙ RIZYULTUNNEL ✙               ${RED_BG}   ${NC}"
+echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}• RIZYUL TUNNEL •              ${NC} $COLOR1 $NC"
 echo -e "${BIWhite}  ───────────────────────────────────────────────────── ${NC}"
 echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIWhite} │                    ${BIWhite}${UWhite}INFORMATIONS${NC}"
