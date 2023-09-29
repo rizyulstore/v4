@@ -6,6 +6,7 @@ echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
 rm -rf trialtrojan
+rm -rf trialtrojango
 rm -rf menu
 rm -rf menu-trial
 rm -rf menu-vmess
@@ -78,6 +79,7 @@ wget -O autokilll "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/aut
 wget -O ceklim "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/rizyulstore/v4/main/ssh/tendang.sh"
 wget -O trialtrojan "https://raw.githubusercontent.com/rizyulstore/v4/main/xray/trialtrojan.sh"
+wget -O trialtrojango "https://raw.githubusercontent.com/rizyulstore/v4/main/xray/trialtrojango.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/rizyulstore/v4/main/menu/menu-set.sh"
