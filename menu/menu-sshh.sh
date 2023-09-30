@@ -125,7 +125,7 @@ fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 echo -e " ${BIWhite}┌──────────────────────────────────────────────┐${NC}"
-echo -e " ${BIWhite}│                ${BIWhite}  SSH MENU         │${NC}" 
+echo -e " ${BIWhite}│                       SSH MENU         │${NC}" 
 echo -e " ${BIWhite}│=============================================│"
 echo -e " ${BIWhite}│        ${white}[•1]${NC} Create ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[•2]${NC} Create trial${NC}"
