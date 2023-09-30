@@ -36,7 +36,7 @@ case $opt in
 6) clear ; auto-reboot ; exit ;;
 7) clear ; speedtest ; exit ;;
 8) clear ; menu-webmin ; exit ;; 
-9) clear ; aboutt ; exit ;;
+9) clear ; about ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "salah pencet abang" ; sleep 1 ; menu-set ;;
