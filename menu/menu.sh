@@ -212,9 +212,9 @@ CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
 clear
 echo -e ""
 echo -e ""
-echo -e "${BIWhite} ┌────────────────────────────────────────────────────┐ ${NC}"
-echo -e "${BIWhite} │                    ✙ RIZYULTUNNEL ✙                        │${NC}"
-echo -e "${BIWhite} └────────────────────────────────────────────────────┘ ${NC}"
+echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐ ${NC}"
+echo -e "${BIWhite} │                    ✙ RIZYULTUNNEL ✙                         │${NC}"
+echo -e "${BIWhite} └─────────────────────────────────────────────────────┘ ${NC}"
 echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIWhite} │                      INFORMATIONS                   │${NC}"
 echo -e "${BIWhite} │=====================================================│"
