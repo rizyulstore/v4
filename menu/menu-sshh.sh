@@ -124,8 +124,8 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "${BIWhite} ┌──────────────────────────────────────────────┐${NC}"
-echo -e "${BIWhite} │                      SSH MENU              │${NC}"
+echo -e "${BIWhite} ┌───────────────────────────────────────────┐${NC}"
+echo -e "${BIWhite} │                   SSH MENU                 │${NC}"
 echo -e "${BIWhite} │==============================================│"
 echo -e " ${BIWhite}│        ${white}[•1]${NC} Create ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[•2]${NC} Create trial${NC}"
@@ -139,7 +139,7 @@ echo -e " ${BIWhite}│        ${white}[•9]${NC} Cek multilogin ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[10]${NC} user lock${NC}"
 echo -e " ${BIWhite}│        ${white}[11]${NC} user unlock${NC}"
 echo -e " ${BIWhite}│        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
-echo -e " ${BIWhite}└──────────────────────────────────────────────┘${NC}"
+echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
 echo -e "${yelow}"
 read -p " Select From Options [ 1 - 11 ] :"  opt
 echo -e ""
