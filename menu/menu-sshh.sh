@@ -126,7 +126,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 echo -e " ${BIWhite}┌───────────────────────────────────────────────┐${NC}"
 echo -e " ${BIWhite}│                ${BIWhite}  SSH MENU                   │${NC}" 
-echo -e " ${BIWhite}│=======================================================│"
+echo -e " ${BIWhite}│=============================================│"
 echo -e " ${BIWhite}│        ${white}[•1]${NC} ${cyann}Create ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[•2]${NC} ${cyann}Create trial${NC}"
 echo -e " ${BIWhite}│        ${white}[•3]${NC} ${cyann}Renew ssh${NC}"
@@ -139,9 +139,9 @@ echo -e " ${BIWhite}│        ${white}[•9]${NC} ${cyann}Cek multilogin ssh${N
 echo -e " ${BIWhite}│        ${white}[•10]${NC} ${cyann}user lock${NC}"
 echo -e " ${BIWhite}│        ${white}[•11]${NC} ${cyann}user unlock${NC}"
 echo -e " ${BIWhite}│        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
-echo -e " ${BIWhite}└────────────────────────────────────────────────┘${NC}"
+echo -e " ${BIWhite}└───────────────────────────────────────────────┘${NC}"
 echo -e "${yelow}"
-read -p " >>>  "  opt
+read -p " Select From Options [ 1 - 11 ] :"  opt
 echo -e ""
 case $opt in
 1) clear ; usernew ; exit ;;
