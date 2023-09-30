@@ -124,7 +124,7 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e " ${BIWhite}┌───────────────────────────────────────────────┐${NC}"
+echo -e " ${BIWhite}┌──────────────────────────────────────────────┐${NC}"
 echo -e " ${BIWhite}│                ${BIWhite}  SSH MENU                   │${NC}" 
 echo -e " ${BIWhite}│=============================================│"
 echo -e " ${BIWhite}│        ${white}[•1]${NC} Create ssh${NC}"
@@ -136,10 +136,10 @@ echo -e " ${BIWhite}│        ${white}[•6]${NC} List user${NC}"
 echo -e " ${BIWhite}│        ${white}[•7]${NC} Delet ssh expired${NC}"
 echo -e " ${BIWhite}│        ${white}[•8]${NC} Auto Kill ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[•9]${NC} Cek multilogin ssh${NC}"
-echo -e " ${BIWhite}│        ${white}[•10]${NC} user lock${NC}"
-echo -e " ${BIWhite}│        ${white}[•11]${NC} user unlock${NC}"
-echo -e " ${BIWhite}│        ${yelow}[•0]${NC} Back To Menu${NC}"
-echo -e " ${BIWhite}└───────────────────────────────────────────────┘${NC}"
+echo -e " ${BIWhite}│        ${white}[10]${NC} user lock${NC}"
+echo -e " ${BIWhite}│        ${white}[11]${NC} user unlock${NC}"
+echo -e " ${BIWhite}│        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
+echo -e " ${BIWhite}└──────────────────────────────────────────────┘${NC}"
 echo -e "${yelow}"
 read -p " Select From Options [ 1 - 11 ] :"  opt
 echo -e ""
