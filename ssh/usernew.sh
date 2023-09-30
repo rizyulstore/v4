@@ -35,11 +35,7 @@ wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | a
 green_background="\033[42;37m"
 red_background="\033[41;37m"
 clear
-echo -e ""
-echo -e ""
-echo -e "${BIWhite} ┌───────────────────────────────────────────┐ ${NC}"
-echo -e "${BIWhite} │             ✙ create account ✙                   │${NC}"
-echo -e "${BIWhite} └───────────────────────────────────────────┘ ${NC}"
+
 read -p "        Username : " Login
 read -p "        Password : " Pass
 read -p "        Expired  : " masaaktif
