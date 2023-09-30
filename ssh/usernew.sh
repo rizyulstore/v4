@@ -95,52 +95,52 @@ TEXT="
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
-
-echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m          𝗔𝗖𝗖𝗢𝗨𝗡𝗧            \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
-echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
-echo -e "\e[1;36m__________________________________________\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m           𝗦𝗘𝗥𝗩𝗘𝗥            \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[1;36m__________________________________________033[0m" | tee -a /etc/log-create-user.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
-echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
-echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "SSHWS       : 80, 8080" | tee -a /etc/log-create-user.log
-echo -e "WS+SSL      : 443" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : 8443,8880" | tee -a /etc/log-create-user.log
-echo -e "UDPGW       : 7200 - support VC" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e "_________________________________________________" | tee -a /etc/log-create-user.log
-#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "             ${red_background}TUTOR BUAT CONFIG${NC}"
-echo -e "_________________________________________________" | tee -a /etc/log-create-user.log
-echo -e "${hijau}contoh mode websocket port 80${NC}"
-echo -e "_________________________________________________"
-echo -e "masukan_bug:80@$Login:$Pass"
-echo -e "PAYLOAD : pake payload websocket"
-echo -e "_________________________________________________"
-echo -e "${hijau}contoh mode ws & ssl port 443${NC}"
-echo -e "_________________________________________________"
-echo -e "$domen:443@Login:$Pass"
-echo -e "PAYLOAD   : pake payload ws & ssl"
-echo -e "SNI / SSL : Masukan_bug
-echo -e___________________________________________________"
-echo -e "Payload ws ssl port 443" | tee -a /etc/log-create-user.log
-echo -e "
-GET-CFRAY wss://[host] [protocol][crlf]Host: ${domen}
-[crlf]Upgrade: ws[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "Payload Websocket port 80" | tee -a /etc/log-create-user.log
-echo -e "
-GET / HTTP/1.1[crlf]Host: 
-$domen[crlf]Upgrade: ws[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "            ${cyan}RIZYUL TUNNEL${NC}"
+echo -e ""
+echo -e "Info SSH & OpenVPN"
+echo -e "=============================="
+echo -e "Username  : $Login"
+echo -e "Password  : $Pass"
+echo -e "Expired   : $exp"
+echo -e "===========HOST-SSH==========="
+echo -e "IP/Host   : $IP"
+echo -e "Domain SSH: $domain"
+echo -e "Domain Cloudflare: $domain"
+echo -e "Domain CloudFront: $cdndomain"
+echo -e "===========SLOWDNS==========="
+echo -e "Domain Name System(DNS): 8.8.8.8"
+echo -e "Name Server(NS): $sldomain"
+echo -e "DNS PUBLIC KEY : $slkey"
+echo -e "Domain SlowDNS : $sldomain"
+echo -e "=========Service-Port========="
+echo -e "SlowDNS: 443,22,109,143"
+echo -e "OpenSSH: 22"
+echo -e "Dropbear: 443, 109, 143"
+echo -e "SSL/TLS: 443"
+echo -e "SSH Websocket SSL/TLS: 443"
+echo -e "SSH Websocket HTTP: 8880"
+echo -e "BadVPN UDPGW: 7100,7200,7300"
+echo -e "Proxy CloudFront: [OFF]"
+echo -e "Proxy Squid: [OFF]"
+echo -e "OHP SSH    : 8181"
+echo -e "OHP Dropbear: 8282"
+echo -e "OHP OpenVPN : 8383"
+echo -e "OVPN Websocket: 2086"
+echo -e "OVPN Port TCP: $ovpn"
+echo -e "OVPN Port UDP: $ovpn2"
+echo -e "OVPN Port SSL: 990"
+echo -e "OVPN TCP: http://$IP:89/tcp.ovpn"
+echo -e "OVPN UDP: http://$IP:89/udp.ovpn"
+echo -e "OVPN SSL: http://$IP:89/ssl.ovpn"
+echo -e "=============================="
+echo -e "SNI/Server Spoof: filled with bugs"
+echo -e "Payload Websocket SSL/TLS"
+echo -e "=============================="
+echo -e "GET wss://bug.com/ HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "=============================="
+echo -e "Payload Websocket HTTP"
+echo -e "=============================="
+echo -e "GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "=============================="
 read -n 1 -s -r -p "Press any key to back on menu"
 
 menu
