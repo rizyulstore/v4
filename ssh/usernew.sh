@@ -40,10 +40,10 @@ echo -e ""
 echo -e "${BIWhite} ┌───────────────────────────────────────────┐ ${NC}"
 echo -e "${BIWhite} │             ✙ create account ✙                   │${NC}"
 echo -e "${BIWhite} └───────────────────────────────────────────┘ ${NC}"
-echo -e "${hijau}"
 read -p "        Username : " Login
 read -p "        Password : " Pass
 read -p "        Expired  : " masaaktif
+
 IP=$(curl -sS ifconfig.me);
 ossl=`cat /root/log-install.txt | grep -w "OpenVPN" | cut -f2 -d: | awk '{print $6}'`
 opensh=`cat /root/log-install.txt | grep -w "OpenSSH" | cut -f2 -d: | awk '{print $1}'`
@@ -120,7 +120,7 @@ echo -e "BadVPN UDPGW: 7100,7200,7300"
 echo -e "=============================="
 echo -e "Payload WS/WSS"
 echo -e "=============================="
-echo -e "GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]<"
+echo -e "GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]"
 echo -e "=============================="
 read -n 1 -s -r -p "Press any key to back on menu"
 
