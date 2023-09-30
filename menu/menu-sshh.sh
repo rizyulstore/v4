@@ -138,10 +138,10 @@ echo -e " ${BIWhite}│        ${white}[•8]${NC} Auto Kill ssh${NC}${white}   
 echo -e " ${BIWhite}│        ${white}[•9]${NC} Cek multilogin ssh${NC}${white}            │"
 echo -e " ${BIWhite}│        ${white}[10]${NC} user lock${NC}${white}                     │"
 echo -e " ${BIWhite}│        ${white}[11]${NC} user unlock${NC}${white}                   │"
-echo -e " ${BIWhite}│        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}${white}                 |"
+echo -e " ${BIWhite}│        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}${white}                  |"
 echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
 echo -e "${yelow}"
-read -p " Select From Options [ 1 - 11 ] :"  opt
+read -p " Select From Options [ 0 - 11 ] :"  opt
 echo -e ""
 case $opt in
 1) clear ; usernew ; exit ;;
