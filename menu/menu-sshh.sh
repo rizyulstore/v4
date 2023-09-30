@@ -124,9 +124,9 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIWhite} │                      SSH MENU                   │${NC}"
-echo -e "${BIWhite} │=====================================================│"
+echo -e "${BIWhite} ┌──────────────────────────────────────────────┐${NC}"
+echo -e "${BIWhite} │                      SSH MENU              │${NC}"
+echo -e "${BIWhite} │==============================================│"
 echo -e " ${BIWhite}│        ${white}[•1]${NC} Create ssh${NC}"
 echo -e " ${BIWhite}│        ${white}[•2]${NC} Create trial${NC}"
 echo -e " ${BIWhite}│        ${white}[•3]${NC} Renew ssh${NC}"
