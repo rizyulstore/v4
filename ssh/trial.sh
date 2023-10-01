@@ -118,15 +118,15 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 
 else
 
-echo -e "\e[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "=============================="| tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧             \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "==============================" | tee -a /etc/log-create-user.log
 echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
-echo -e "\e[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "=============================="| tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m         𝗦𝗘𝗥𝗩𝗘𝗥              \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "==============================" | tee -a /etc/log-create-user.log
 echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
 echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
@@ -141,9 +141,9 @@ echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SETING-UDP  : $domen:1-65535@$Login:$Pass"
-echo -e "\e[1;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "=============================="| tee -a /etc/log-create-user.log
 echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "\e[1;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "=============================="| tee -a /etc/log-create-user.log
 echo -e "Payload WSS+SSL [husus port 443]" | tee -a /etc/log-create-user.log
 echo -e "
 GET-CFRAY wss://[host] [protocol]
@@ -156,7 +156,7 @@ echo -e "
 GET / HTTP/1.1[crlf]Host: $domen
 [crlf]Upgrade: ws[crlf][crlf]
 " | tee -a /etc/log-create-user.log
-echo -e "\e[1;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "=============================="| tee -a /etc/log-create-user.log
 fi
 echo ""
 read -n 1 -s -r -p "Press enter to menu"
