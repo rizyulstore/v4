@@ -130,7 +130,6 @@ GET / HTTP/1.1[crlf]Host: $domen
 [crlf]Upgrade: ws[crlf][crlf]
 "
 echo -e "=============================="
-fi
 echo ""
 read -n 1 -s -r -p "Press enter to menu"
 menu
