@@ -122,15 +122,15 @@ echo -e "
 GET-CFRAY wss://[host] [protocol]
 [crlf]Host: ${domen}
 [crlf]Upgrade: ws[crlf][crlf]
-"echo -e "==============================="
+"
+echo -e "==============================="
 echo -e "Payload WS [husus port 80]"
 echo -e "
 GET / HTTP/1.1[crlf]Host: $domen
 [crlf]Upgrade: ws[crlf][crlf]
-" | tee -a /etc/log-create-user.log
+"
 echo -e "=============================="
 fi
 echo ""
 read -n 1 -s -r -p "Press enter to menu"
-
 menu
