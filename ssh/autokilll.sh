@@ -36,7 +36,7 @@ echo -e " ${BIWhite}│  ${wh}[•3]${NC}  AutoKill dalam 15 Minutes${NC}       
 echo -e " ${BIWhite}│  ${wh}[•4]${NC}  Turn Off AutoKill/MultiLogin${NC}    │"
 echo -e " ${BIWhite}│  ${ye}[•0]${NC} ${ye} Back to Menu${NC}               │"
 echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
-echo -e "${gr}"
+echo -e "${ye}"
 read -p "Select [1-4 or 0] :  " AutoKill
 if [ -z $AutoKill ]; then
 autokill-menu
