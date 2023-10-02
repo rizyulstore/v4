@@ -16,6 +16,7 @@ sts="${Error}"
 fi
 # color
 gr="\e[1;32m" # HIJAU
+BIWhite='\033[1;97m' # White
 cy="\e[1;36m" # CYAN
 wh="\e[1;37m" # PUTIH
 pr="\e[1;35m" # UNGU
