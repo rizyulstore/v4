@@ -36,7 +36,7 @@ echo -e " ${BIWhite}│${wh}[•4]${NC}  Turn Off AutoKill/MultiLogin${NC}"
 echo -e " ${BIWhite}│${ye}[•0]${NC}  Back to Menu${NC}"
 echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
 echo -e "${gr}"
-read -p "Select [1-4 or x] :  " AutoKill
+read -p "Select [1-4 or 0] :  " AutoKill
 if [ -z $AutoKill ]; then
 autokill-menu
 fi
