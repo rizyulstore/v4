@@ -23,8 +23,9 @@ ye="\e[1;33m" # KUNING
 NC="\033[0m"  # PENUTUP
 
 clear
+
 echo -e "${BIWhite} ┌───────────────────────────────────────────┐${NC}"
-echo -e "${BIWhite} │                AUTOKILL SSH                │${NC}"
+echo -e "${BIWhite} │                AUTOKILL SSH               │${NC}"
 echo -e "${BIWhite} │===========================================│"
 echo -e " ${BIWhite}│Status Autokill : $sts        ${NC}"
 echo -e " ${BIWhite}│
@@ -109,6 +110,6 @@ case $AutoKill in
                 clear
                 autokill-menu
                 ;;
-        esac
+       
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
