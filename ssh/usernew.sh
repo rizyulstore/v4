@@ -91,8 +91,6 @@ TEXT="
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
-else
-
 echo -e "==============================" 
 echo -e "\E[40;1;37m        𝗔𝗖𝗖𝗢𝗨𝗡𝗧             \E[0m" 
 echo -e "==============================" 
