@@ -23,15 +23,18 @@ ye="\e[1;33m" # KUNING
 NC="\033[0m"  # PENUTUP
 
 clear
-echo -e "     ${wh}AUTOKILL SSH${NC}"
-echo -e "${cy}"
-echo -e "Status Autokill : $sts        "
-echo -e ""
-echo -e "      ${wh}[•1]${NC}  ${cy}AutoKill dalam 5 Minutes${NC}"
-echo -e "      ${wh}[•2]${NC}  ${cy}AutoKill dalam 10 Minutes${NC}"
-echo -e "      ${wh}[•3]${NC}  ${cy}AutoKill dalam 15 Minutes${NC}"
-echo -e "      ${wh}[•4]${NC}  ${cy}Turn Off AutoKill/MultiLogin${NC}"
-echo -e "      ${ye}[•0]${NC}  ${ye}Back to Menu${NC}"
+echo -e "${BIWhite} ┌───────────────────────────────────────────┐${NC}"
+echo -e "${BIWhite} │                 AUTOKILL SSH                  │${NC}"
+echo -e "${BIWhite} │===========================================│"
+echo -e "${ye}"
+echo -e " ${BIWhite}│Status Autokill : $sts        "
+echo -e " ${BIWhite}│
+echo -e " ${BIWhite}│${wh}[•1]${NC}  AutoKill dalam 5 Minutes${NC}"
+echo -e " ${BIWhite}│${wh}[•2]${NC}  AutoKill dalam 10 Minutes${NC}"
+echo -e " ${BIWhite}│${wh}[•3]${NC}  AutoKill dalam 15 Minutes${NC}"
+echo -e " ${BIWhite}│${wh}[•4]${NC}  Turn Off AutoKill/MultiLogin${NC}"
+echo -e " ${BIWhite}│${ye}[•0]${NC}  Back to Menu${NC}"
+echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
 echo -e "${gr}"
 read -p "Select [1-4 or x] :  " AutoKill
 if [ -z $AutoKill ]; then
