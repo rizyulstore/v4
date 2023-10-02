@@ -28,7 +28,7 @@ echo -e "${BIWhite} ┌───────────────────
 echo -e "${BIWhite} │                AUTOKILL SSH               │${NC}"
 echo -e "${BIWhite} │===========================================│"
 echo -e " ${BIWhite}│Status Autokill : $sts        ${NC}"
-echo -e " ${BIWhite}│
+echo -e " ${BIWhite}│${NC}"
 echo -e " ${BIWhite}│${wh}[•1]${NC}  AutoKill dalam 5 Minutes${NC}"
 echo -e " ${BIWhite}│${wh}[•2]${NC}  AutoKill dalam 10 Minutes${NC}"
 echo -e " ${BIWhite}│${wh}[•3]${NC}  AutoKill dalam 15 Minutes${NC}"
