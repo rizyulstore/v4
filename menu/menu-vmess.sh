@@ -52,6 +52,7 @@ PERMISSION () {
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
+BIWhite='\033[1;97m'      # White
         # background validation
 
         green_background="\033[42;37m"
@@ -81,19 +82,18 @@ exit 0
 fi
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • XRAY / VMESS MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e "        ${white}[•1]${NC} ${cyan}Create v2ray${NC}"
-echo -e "        ${white}[•2]${NC} ${cyan}Create trial${NC}"
-echo -e "        ${white}[•3]${NC} ${cyan}Xtendd V2ray${NC}"
-echo -e "        ${white}[•4]${NC} ${cyan}Delete V2ray${NC}"
-echo -e "        ${white}[•5]${NC} ${cyan}Cek User Login${NC}"
-echo -e "        ${yelow}[•0]${NC} ${yelow}Back To Menu${NC}"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "${BIWhite} ┌───────────────────────────────────────────┐${NC}"
+echo -e "${BIWhite} │           • XRAY / VMESS MENU •           │${NC}"
+echo -e "${BIWhite} │===========================================│"
+echo -e " ${BIWhite}│   ${white} [•1]${NC} Create v2ray${NC}${white}                    │"
+echo -e " ${BIWhite}│   ${white} [•2]${NC} Create trial${NC}${white}                    │"
+echo -e " ${BIWhite}│   ${white} [•3]${NC} Xtendd V2ray${NC}${white}                    │"
+echo -e " ${BIWhite}│   ${white} [•4]${NC} Delete V2ray${NC}${white}                    │"
+echo -e " ${BIWhite}│   ${white} [•5]${NC} Cek User Login${NC}${white}                    │"
+echo -e " ${BIWhite}│   ${white} [•0]${NC} ${yelow}Back To Menu${NC}${white}                    │"
+echo -e " ${BIWhite}└───────────────────────────────────────────┘${NC}"
 echo -e "${yelow}"
-read -p "  >>>   "  opt
+read -p "  Select From Options [ 0 - 5 ]  "  opt
 echo -e ""
 case $opt in
 1) clear ; add-ws ; exit ;;
