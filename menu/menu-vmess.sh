@@ -63,7 +63,7 @@ BIWhite='\033[1;97m'      # White
 
         yelow="\e[1;33m"
 
-        NC="\033[0m"
+        NC="\e[0m"
 
         cyan="\e[1;36m"
 
