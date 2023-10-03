@@ -40,9 +40,9 @@ echo -e "\\E[40;1;37m      Add SSH Account      \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 clear
 
-read -p "        Username : " Login
-read -p "        Password : " Pass
-read -p "        Expired  : " masaaktif
+read -p " Username : " Login
+read -p " Password : " Pass
+read -p " Expired  : " masaaktif
 
 IP=$(curl -sS ifconfig.me);
 ossl=`cat /root/log-install.txt | grep -w "OpenVPN" | cut -f2 -d: | awk '{print $6}'`
