@@ -246,7 +246,7 @@ echo -e " ${BIWhite}│  User       ${NC}   : $Name \e[0m"
 echo -e " ${BIWhite}│  Expiry script${NC} : ${BIYellow}$useexp${NC} Days"
 echo -e " ${BIWhite}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIWhite} ┌─────────────────────────────────────────────────────┐ ${NC}"
-echo -e "${BIWhite} │                    ✙ RIZYULTUNNEL ✙                         │${NC}"
+echo -e "${BIWhite} │                    ✙ RIZYULTUNNEL ✙                │${NC}"
 echo -e "${BIWhite} └─────────────────────────────────────────────────────┘ ${NC}"
 echo
 read -p " Select menu : " opt
